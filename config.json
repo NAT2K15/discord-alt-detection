@@ -1,0 +1,18 @@
+{
+    "token": "your discord token",
+    "debug": true,
+
+    "embed": {
+        "color": "#00000",
+        "footer": "your footer"
+    },
+
+    "settings": {
+        "days": 30,
+        "channel": "your logs channel",
+
+        "kick_on_join": true,
+        "kick_message": "You have been kicked because your account creation does not meet our server requirements"
+    }
+
+}
