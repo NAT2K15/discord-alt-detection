@@ -16,7 +16,7 @@ nat.on('guildMemberAdd', async(member) => {
     }
     let days = moment().subtract(daysconfig, 'days')
     let isit = userjoin.isBefore(days);
-    if (isit) {
+    if (!isit) {
         let data = moment(member.user.createdAt).format("YYYY/MM/DD");
         let chann = member.guild.channels.cache.get(config.settings.channel)
         if (!chann) {
